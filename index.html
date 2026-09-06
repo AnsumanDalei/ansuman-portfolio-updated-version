@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ansuman Dalei — Full-Stack Python & DevOps Engineer</title>
+<meta name="description" content="Portfolio of Ansuman Dalei — Software Engineer, Full-Stack Python Developer, DevOps Enthusiast and AI/ML Engineer." />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234C7DFF'/%3E%3Cstop offset='0.55' stop-color='%238C6CFF'/%3E%3Cstop offset='1' stop-color='%2322D3E8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ccircle cx='49' cy='15' r='3.4' fill='white' opacity='0.92'/%3E%3Ctext x='31' y='43' font-family='Arial, sans-serif' font-weight='800' font-size='25' fill='white' text-anchor='middle'%3EAD%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Font Awesome removed — all icons are now self-contained inline SVG (see <symbol> library at top of <body>), so the portfolio has zero external icon-library dependency. -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg style="position:absolute; width:0; height:0; overflow:hidden;" aria-hidden="true" focusable="false">
+<defs>
+<symbol id="ic-dot" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"></circle></symbol>
+<symbol id="ic-bullseye" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"></circle><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.8"></circle><circle cx="12" cy="12" r="1.6"></circle></symbol>
+<symbol id="ic-hammer" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 3.5 20.5 9.5 17.5 12.5 11.5 6.5Z"></path><path d="M13 8 4 17l-1 4 4-1 9-9"></path></g></symbol>
+<symbol id="ic-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></g></symbol>
+<symbol id="ic-terminal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M6 9l4 3-4 3"></path><line x1="12" y1="15" x2="18" y2="15"></line></g></symbol>
+<symbol id="ic-prompt" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 6 9 12 4 18"></polyline><line x1="12" y1="18" x2="20" y2="18"></line></g></symbol>
+<symbol id="ic-python" viewBox="0 0 24 24"><rect x="1.5" y="1.5" width="21" height="21" rx="6" fill="none" stroke="currentColor" stroke-width="1.3"></rect><text x="12" y="15.5" font-family="Arial, sans-serif" font-weight="800" font-size="9.5" text-anchor="middle" fill="currentColor">Py</text></symbol>
+<symbol id="ic-java" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10h10v4a5 5 0 0 1-5 5 5 5 0 0 1-5-5v-4Z"></path><path d="M16 11h1.5a2 2 0 0 1 0 4H16"></path><path d="M8 3c-1 1.5 1 2-.3 4"></path><path d="M12 2.5c-1 1.5 1 2-.3 4"></path><path d="M7 21c3 1 7 1 10 0"></path></g></symbol>
+<symbol id="ic-database" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"></path><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"></path></g></symbol>
+<symbol id="ic-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><line x1="3" y1="12" x2="21" y2="12"></line></g></symbol>
+<symbol id="ic-code" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 6 2 12 8 18"></polyline><polyline points="16 6 22 12 16 18"></polyline></g></symbol>
+<symbol id="ic-js" viewBox="0 0 24 24"><text x="12" y="16" font-family="Arial, sans-serif" font-weight="800" font-size="9.5" text-anchor="middle" fill="currentColor">JS</text></symbol>
+<symbol id="ic-git" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></g></symbol>
+<symbol id="ic-brain" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5h1a3 3 0 0 0 3-3V6a2 2 0 0 0-1-2Z"></path><path d="M15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5h-1a3 3 0 0 1-3-3V6a2 2 0 0 1 1-2Z"></path></g></symbol>
+<symbol id="ic-diagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.4"></circle><circle cx="19" cy="6" r="2.4"></circle><circle cx="12" cy="18" r="2.4"></circle><path d="M6.8 7.6 10.5 16.2"></path><path d="M17.2 7.6 13.5 16.2"></path><path d="M7.4 6h9.2"></path></g></symbol>
+<symbol id="ic-docker" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="10" width="4" height="4"></rect><rect x="8" y="10" width="4" height="4"></rect><rect x="13" y="10" width="4" height="4"></rect><rect x="8" y="5" width="4" height="4"></rect><path d="M2 14c1 4 4 6 9 6 6 0 10-3 11-9-1 .6-2 1-3 1-1-2-3-3-3-3s-1 2-.5 3.4c-.5.3-1.2.5-2 .6H2Z"></path></g></symbol>
+<symbol id="ic-jenkins" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M5 21v-3a7 7 0 0 1 14 0v3"></path><line x1="9" y1="7" x2="9" y2="7.1"></line><line x1="15" y1="7" x2="15" y2="7.1"></line></g></symbol>
+<symbol id="ic-cloud" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M6.5 19a4.5 4.5 0 0 1-.5-9 5.5 5.5 0 0 1 10.7-1.8A4.5 4.5 0 0 1 17.5 19h-11Z"></path></symbol>
+<symbol id="ic-server" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1.5"></rect><rect x="3" y="14" width="18" height="6" rx="1.5"></rect><line x1="7" y1="7" x2="7" y2="7.1"></line><line x1="7" y1="17" x2="7" y2="17.1"></line></g></symbol>
+<symbol id="ic-calendar-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><line x1="3" y1="10" x2="21" y2="10"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="16" y1="2" x2="16" y2="6"></line><path d="M8 15l2.5 2.5L16 12"></path></g></symbol>
+<symbol id="ic-send" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"></path><path d="M22 2 15 22l-4-9-9-4 20-7Z"></path></g></symbol>
+</defs>
+</svg>
+
+<svg width="0" height="0" style="position:absolute;" aria-hidden="true">
+  <defs>
+    <linearGradient id="adGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4C7DFF"/>
+      <stop offset="0.55" stop-color="#8C5CFF"/>
+      <stop offset="1" stop-color="#12C7DE"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<div class="bg-layer" id="auroraLight"><span class="b1"></span><span class="b2"></span><span class="b3"></span><span class="b4"></span></div>
+<div id="bgGrid"></div>
+<div class="bg-layer bg-shards" id="bgShards" aria-hidden="true">
+  <span class="shard s1"></span><span class="shard s2"></span><span class="shard s3"></span>
+  <span class="shard s4"></span><span class="shard s5"></span><span class="shard s6"></span>
+  <span class="orb o1"></span><span class="orb o2"></span>
+</div>
+<div id="bgVignette"></div>
+<div id="lightRays" class="bg-layer"></div>
+<div class="grain"></div>
+<canvas id="glCanvas"></canvas>
+<div id="scrollbar"><div id="scrollbar-fill"></div></div>
+
+<div id="preloader">
+  <div class="preload-mark-wrap">
+    <div class="preload-bracket tl"></div><div class="preload-bracket tr"></div><div class="preload-bracket bl"></div><div class="preload-bracket br"></div>
+    <!-- PRELOADER PROFILE PHOTO -->
+    <div class="ad-mark avatar-mark" style="border-radius:22%;"><img class="avatar-photo" alt="Ansuman Dalei" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" /></div>
+  </div>
+  <div class="preload-name">Ansuman Dalei</div>
+  <div class="preload-bar"><div class="preload-bar-fill" id="preloadFill"></div></div>
+  <div class="preload-count" id="preloadCount">LOADING — 00%</div>
+</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <!-- NAVBAR PROFILE PHOTO -->
+      <div class="ad-mark avatar-mark" style="border-radius:22%;"><img class="avatar-photo" alt="Ansuman Dalei" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" /></div>
+      <div class="nav-mark">Ansuman Dalei</div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-section="about">About</a></li>
+      <li><a href="#experience" data-section="experience">Experience</a></li>
+      <li><a href="#skills" data-section="skills">Skills</a></li>
+      <li><a href="#projects" data-section="projects">Projects</a></li>
+      <li><a href="#achievements" data-section="achievements">Achievements</a></li>
+      <li><a href="#github" data-section="github">GitHub</a></li>
+      <li><a href="#contact" data-section="contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="https://drive.google.com/file/d/1bw3d_a04BXXfcQtEYIibpOPfzBIqBkrv/view?usp=drivesdk" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" data-magnetic><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>Resume</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-content">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="dot"></span>Full-Stack Python &amp; DevOps Engineer · Open to Work</p>
+      <h1 class="hero-title">Hi, I'm <span class="hl">Ansuman Dalei</span></h1>
+      <p class="hero-role-line">I build as a <span id="roleType">Software Engineer</span><span class="role-cursor"></span></p>
+      <p class="hero-sub">A Computer Science graduate specializing in AI, focused on Full-Stack Python development, DevOps and AWS Cloud. I like building systems that work cleanly from the backend out to deployment.</p>
+      <div class="hero-meta">
+        <span class="pill"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--blue); flex-shrink:0;" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Bhubaneswar, India</span>
+        <span class="pill"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="color:var(--violet); flex-shrink:0;" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5Z"></path><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"></path></svg>B.Tech CSE (AI), 2026</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" data-magnetic data-nav>View My Work</a>
+        <a href="#contact" class="btn btn-ghost" data-magnetic data-nav>Let's Connect</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="visual-stage" id="visualStage">
+        <div class="photo-glow" aria-hidden="true"></div>
+        <div class="photo-frame3d" id="photoFrame3d">
+          <div class="photo-frame3d-inner">            <img id="mainProfilePhotoImg" src="assets/images/profile.jpg" alt="Portrait of Ansuman Dalei" width="760" height="1013" loading="eager" />
+          </div>
+        </div>
+        <!-- EDUCATION BADGE ICON -->
+      </div>
+      <div class="photo-badge"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="color:var(--violet); flex-shrink:0;" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5Z"></path><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"></path></svg> B.Tech CSE (AI), 2026</div>
+    </div>
+  </div>
+  <div class="scroll-cue"><div class="mouse"></div>SCROLL TO EXPLORE</div>
+</header>
+
+<main>
+
+  <section class="wrap section-tint tint-blue" id="about">
+    <div class="section-label reveal"><span class="index">01</span><span class="label-text">About</span></div>
+    <h2 class="section-title reveal">The story so far, <em>in four parts</em>.</h2>
+
+    <div class="story-grid">
+      <div class="story-blocks" id="storyBlocks">
+        <div class="story-block" data-face="0">
+          <span class="sb-tag">EDUCATION</span>
+          <h3>Built on a Computer Science foundation.</h3>
+          <p>I'm a <b>2026 B.Tech graduate in Computer Science &amp; Engineering, specializing in AI</b>, from GITA Autonomous College, Bhubaneswar. That's where the interest in building real, working software actually started.</p>
+        </div>
+        <div class="story-block" data-face="1">
+          <span class="sb-tag">CURRENT FOCUS</span>
+          <h3>Right now, I'm going deep on five things.</h3>
+          <p>Full-Stack Python development, DevOps, Data Structures &amp; Algorithms in Python, AWS Cloud, and backend engineering — the exact stack most fresher software roles are hiring for.</p>
+        </div>
+        <div class="story-block" data-face="2">
+          <span class="sb-tag">HOW I WORK</span>
+          <h3>I learn by building, not just reading.</h3>
+          <p>Every certification I've completed fed into an actual project or internship task — from a live software internship to hands-on Docker/Kubernetes/AWS training.</p>
+        </div>
+        <div class="story-block" data-face="3">
+          <span class="sb-tag">RIGHT NOW</span>
+          <h3>Based in Bhubaneswar, open to opportunities.</h3>
+          <p>I'm actively looking for full-time <b>Software Engineer / Full-Stack Python / DevOps</b> roles — open to relocating or working remotely.</p>
+        </div>
+      </div>
+
+      <div class="story-visual-pin">
+        <div class="story-card glass">
+          <div class="story-face active" data-face="0">
+            <div class="sf-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5Z"></path><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"></path></svg></div>
+            <div class="sf-title">Education</div>
+            <div class="sf-desc">B.Tech CSE (AI Specialization)</div>
+            <ul class="sf-list">
+              <li><svg class="ic" width="8" height="8" fill="currentColor" aria-hidden="true"><use href="#ic-dot"></use></svg>GITA Autonomous College, Bhubaneswar</li>
+              <li><svg class="ic" width="8" height="8" fill="currentColor" aria-hidden="true"><use href="#ic-dot"></use></svg>Graduating 2026</li>
+              <li><svg class="ic" width="8" height="8" fill="currentColor" aria-hidden="true"><use href="#ic-dot"></use></svg>AI Specialization Track</li>
+            </ul>
+          </div>
+          <div class="story-face" data-face="1">
+            <div class="sf-icon"><svg class="ic" width="22" height="22" fill="currentColor" aria-hidden="true"><use href="#ic-bullseye"></use></svg></div>
+            <div class="sf-title">Current Focus</div>
+            <div class="sf-desc">What I'm training on right now</div>
+            <ul class="sf-list">
+              <li><svg class="ic" width="8" height="8" fill="currentColor" aria-hidden="true"><use href="#ic-dot"></use></svg>Full-Stack Python Development</li>
+              <li><svg class="ic" width="8" height="8" fill="currentColor" aria-hidden="true"><use href="#ic-dot"></use></svg>DevOps &amp; AWS Cloud</li>
+              <li><svg class="ic" width="8" height="8" fill="currentColor" aria-hidden="true"><use href="#ic-dot"></use></svg>DSA in Python</li>
+            </ul>
+          </div>
+          <div class="story-face" data-face="2">
+            <div class="sf-icon"><svg class="ic" width="22" height="22" fill="currentColor" aria-hidden="true"><use href="#ic-hammer"></use></svg></div>
+            <div class="sf-title">How I Work</div>
+            <div class="sf-desc">Learning through real builds</div>
+            <ul class="sf-list">
+              <li><svg class="ic" width="8" height="8" fill="currentColor" aria-hidden="true"><use href="#ic-dot"></use></svg>Live internship experience</li>
+              <li><svg class="ic" width="8" height="8" fill="currentColor" aria-hidden="true"><use href="#ic-dot"></use></svg>Certifications tied to real projects</li>
+              <li><svg class="ic" width="8" height="8" fill="currentColor" aria-hidden="true"><use href="#ic-dot"></use></svg>Hackathon team leadership</li>
+            </ul>
+          </div>
+          <div class="story-face" data-face="3">
+            <!-- RIGHT NOW ICON PLACEHOLDER -->
+            <div class="sf-icon"><svg class="ic" width="22" height="22" fill="currentColor" aria-hidden="true"><use href="#ic-pin"></use></svg></div>
+            <div class="sf-title">Right Now</div>
+            <div class="sf-desc">Bhubaneswar, Odisha, India</div>
+            <ul class="sf-list">
+              <li><svg class="ic" width="8" height="8" fill="currentColor" aria-hidden="true"><use href="#ic-dot"></use></svg>Open to full-time roles</li>
+              <li><svg class="ic" width="8" height="8" fill="currentColor" aria-hidden="true"><use href="#ic-dot"></use></svg>Open to relocation</li>
+              <li><svg class="ic" width="8" height="8" fill="currentColor" aria-hidden="true"><use href="#ic-dot"></use></svg>Open to remote</li>
+            </ul>
+          </div>
+          <div class="story-dots" id="storyDots">
+            <span class="active" data-dot="0"></span><span data-dot="1"></span><span data-dot="2"></span><span data-dot="3"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section-tint tint-lav" id="experience">
+    <div class="exp-wrap">
+      <div class="section-label reveal"><span class="index">02</span><span class="label-text">Experience</span></div>
+      <h2 class="section-title reveal">Training, credentials, and time <em>on the job</em>.</h2>
+
+      <div class="timeline">
+        <div class="timeline-track"><div class="timeline-fill" id="timelineFill"></div></div>
+        <div class="tl-item" data-tl>
+          <div class="tl-node"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div>
+          <div class="tl-card glass">
+            <span class="tl-date">OCT 2025 — FEB 2026</span>
+            <div class="tl-title">Software Development Intern — ASP OL Media Pvt. Ltd.</div>
+            <div class="tl-desc">Hands-on industry experience applying core software development skills in a live team environment.</div>
+          </div>
+        </div>
+        <div class="tl-item" data-tl>
+          <div class="tl-node"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></div>
+          <div class="tl-card glass">
+            <span class="tl-date">2025 — 2026</span>
+            <div class="tl-title">Full Stack &amp; DevOps Training — Pyspiders BTM</div>
+            <div class="tl-desc">Python, SQL, Django, Docker, Kubernetes, Jenkins, Ansible, Terraform, AWS — the core of my current focus.</div>
+          </div>
+        </div>
+        <div class="tl-item" data-tl>
+          <div class="tl-node"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4h8v5a4 4 0 0 1-8 0V4z"></path><path d="M8 5H4v1a4 4 0 0 0 4 4"></path><path d="M16 5h4v1a4 4 0 0 1-4 4"></path><path d="M12 13v4"></path><path d="M9 21h6"></path><path d="M9 21c0-2 1.3-3 3-3s3 1 3 3"></path></svg></div>
+          <div class="tl-card glass">
+            <span class="tl-date">2024</span>
+            <div class="tl-title">Smart India Hackathon — Team Lead &amp; Presenter</div>
+            <div class="tl-desc">GITA Autonomous College internal round. Led the team and presented a full-stack fitness &amp; diet tracking solution.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section-tint tint-cyan" id="skills">
+    <div class="section-label reveal"><span class="index">03</span><span class="label-text">Skills</span></div>
+    <h2 class="section-title reveal">My developer <em>command center</em>.</h2>
+
+    <div class="console glass reveal">
+      <div class="console-header">
+        <div class="console-header-left">
+          <div class="console-dots"><span style="background:#FF9F5A;"></span><span style="background:#FFD166;"></span><span style="background:#12C7DE;"></span></div>
+          <span class="console-title">skills.index — 5 modules loaded</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:16px;">
+          <div class="console-status"><span class="dot"></span>SYSTEM ONLINE</div>
+        </div>
+      </div>
+
+      <div class="module-grid">
+        <div class="module mod-span-2 glass" data-mod>
+          <span class="module-corner tl"></span><span class="module-corner br"></span>
+          <div class="module-head">
+            <!-- SKILL ICON PLACEHOLDER: CORE LANGUAGES -->
+            <div class="module-icon" style="--icon-rgb:76,125,255;"><svg class="ic" width="17" height="17" fill="currentColor" aria-hidden="true"><use href="#ic-terminal"></use></svg></div>
+            <span class="module-id">MOD-01</span>
+          </div>
+          <div class="module-title">Core Languages</div>
+          <div class="chip-row">
+            <span class="skill-chip"><svg class="ic" width="13" height="13" fill="currentColor" aria-hidden="true"><use href="#ic-python"></use></svg>Python</span>
+            <span class="skill-chip">C</span>
+            <span class="skill-chip"><svg class="ic" width="13" height="13" fill="currentColor" aria-hidden="true"><use href="#ic-java"></use></svg>Java</span>
+            <span class="skill-chip"><svg class="ic" width="13" height="13" fill="currentColor" aria-hidden="true"><use href="#ic-database"></use></svg>SQL</span>
+          </div>
+        </div>
+
+        <div class="module mod-span-2 glass" data-mod>
+          <span class="module-corner tl"></span><span class="module-corner br"></span>
+          <div class="module-head">
+            <!-- SKILL ICON PLACEHOLDER: WEB & BACKEND -->
+            <div class="module-icon" style="--icon-rgb:140,92,255;"><svg class="ic" width="17" height="17" fill="currentColor" aria-hidden="true"><use href="#ic-globe"></use></svg></div>
+            <span class="module-id">MOD-02</span>
+          </div>
+          <div class="module-title">Web &amp; Backend</div>
+          <div class="chip-row">
+            <span class="skill-chip"><svg class="ic" width="13" height="13" fill="currentColor" aria-hidden="true"><use href="#ic-code"></use></svg>HTML/CSS</span>
+            <span class="skill-chip"><svg class="ic" width="13" height="13" fill="currentColor" aria-hidden="true"><use href="#ic-js"></use></svg>JavaScript</span>
+            <span class="skill-chip">Django</span>
+            <span class="skill-chip">REST APIs</span>
+            <span class="skill-chip"><svg class="ic" width="13" height="13" fill="currentColor" aria-hidden="true"><use href="#ic-git"></use></svg>Git</span>
+          </div>
+        </div>
+
+        <div class="module mod-span-2 glass" data-mod>
+          <span class="module-corner tl"></span><span class="module-corner br"></span>
+          <div class="module-head">
+            <!-- SKILL ICON PLACEHOLDER: AI / ML -->
+            <div class="module-icon" style="--icon-rgb:18,199,222;"><svg class="ic" width="17" height="17" fill="currentColor" aria-hidden="true"><use href="#ic-brain"></use></svg></div>
+            <span class="module-id">MOD-03</span>
+          </div>
+          <div class="module-title">AI / ML</div>
+          <div class="chip-row">
+            <span class="skill-chip">Machine Learning</span>
+            <span class="skill-chip">AI Fundamentals</span>
+            <span class="skill-chip">LangChain</span>
+          </div>
+        </div>
+
+        <div class="module mod-span-6 glass" data-mod>
+          <span class="module-corner tl"></span><span class="module-corner br"></span>
+          <div class="module-head">
+            <!-- SKILL ICON PLACEHOLDER: DEVOPS & CLOUD -->
+            <div class="module-icon" style="--icon-rgb:47,83,224;"><svg class="ic" width="17" height="17" fill="currentColor" aria-hidden="true"><use href="#ic-diagram"></use></svg></div>
+            <span class="module-id">MOD-04</span>
+          </div>
+          <div class="module-title">DevOps &amp; Cloud</div>
+          <div class="chip-row">
+            <span class="skill-chip"><svg class="ic" width="13" height="13" fill="currentColor" aria-hidden="true"><use href="#ic-docker"></use></svg>Docker</span>
+            <span class="skill-chip"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"></circle><path d="M12 3v4.5"></path><path d="M12 16.5V21"></path><path d="M4.5 7.5l3.9 2.25"></path><path d="M15.6 14.25l3.9 2.25"></path><path d="M4.5 16.5l3.9-2.25"></path><path d="M15.6 9.75l3.9-2.25"></path></svg>Kubernetes</span>
+            <span class="skill-chip"><svg class="ic" width="13" height="13" fill="currentColor" aria-hidden="true"><use href="#ic-jenkins"></use></svg>Jenkins</span>
+            <span class="skill-chip">Ansible</span>
+            <span class="skill-chip">Terraform</span>
+            <span class="skill-chip"><svg class="ic" width="13" height="13" fill="currentColor" aria-hidden="true"><use href="#ic-cloud"></use></svg>AWS</span>
+          </div>
+        </div>
+
+        <div class="module mod-span-6 glass" data-mod>
+          <span class="module-corner tl"></span><span class="module-corner br"></span>
+          <div class="module-head">
+            <!-- SKILL ICON PLACEHOLDER: LINUX & SHELL -->
+            <div class="module-icon" style="--icon-rgb:12,142,161;"><svg class="ic" width="17" height="17" fill="currentColor" aria-hidden="true"><use href="#ic-terminal"></use></svg></div>
+            <span class="module-id">MOD-05</span>
+          </div>
+          <div class="module-title">Linux &amp; Shell Scripting</div>
+          <div class="chip-row">
+            <span class="skill-chip"><svg class="ic" width="13" height="13" fill="currentColor" aria-hidden="true"><use href="#ic-terminal"></use></svg>Linux</span>
+            <span class="skill-chip"><svg class="ic" width="13" height="13" fill="currentColor" aria-hidden="true"><use href="#ic-prompt"></use></svg>Bash</span>
+            <span class="skill-chip"><svg class="ic" width="13" height="13" fill="currentColor" aria-hidden="true"><use href="#ic-code"></use></svg>Shell Scripting</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="console-footer">
+        <span>5 categories · 21 tools indexed</span>
+        <span>Hover a module to scan →</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section-tint tint-blue">
+    <div class="wrap">
+      <div class="projects-head-row">
+        <div>
+          <div class="section-label reveal"><span class="index">04</span><span class="label-text">Projects</span></div>
+          <h2 class="section-title reveal" style="margin-bottom:10px;">Things I've built, <em>end to end</em>.</h2>
+        </div>
+        <div class="gl-slot projects-gl-slot reveal" data-scene="projects"></div>
+      </div>
+    </div>
+
+    <div class="project-showcase">
+      <div class="wrap">
+        <div class="project-row" data-reveal="wipe">
+          <div class="p-copy">
+            <div class="p-top"><span class="p-num">01 / 05</span><span class="badge badge-live">Live</span></div>
+            <!-- PROJECT LOGO PLACEHOLDER -->
+            <div class="p-title">Desktop Voice Assistant</div>
+            <p class="p-desc">A Python-based desktop assistant that accepts voice commands to search Wikipedia, open websites, send emails, and play music.</p>
+            <div class="tag-row"><span class="tag">Python</span><span class="tag">pyttsx3</span><span class="tag">SpeechRecognition</span></div>
+            <div class="p-actions">
+              <a href="https://github.com/AnsumanDalei/desktop-voice-assistant" target="_blank" rel="noopener" class="p-link gh" data-magnetic><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.03 11.03 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>GitHub<svg class="ext-arrow" viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
+            </div>
+          </div>
+          <div class="p-mock" data-tilt>
+            <div class="mock-bar"><span class="mock-dot" style="background:#FF5F57;"></span><span class="mock-dot" style="background:#FEBC2E;"></span><span class="mock-dot" style="background:#28C840;"></span><span class="mock-filename">assistant.py</span></div>
+            <div class="mock-body"><span class="c-kw">import</span> <span class="c-var">speech_recognition</span> <span class="c-kw">as</span> <span class="c-var">sr</span><br><span class="c-kw">import</span> <span class="c-var">pyttsx3</span><br><br><span class="c-kw">def</span> <span class="c-fn">listen_command</span>():<br>&nbsp;&nbsp;<span class="c-cm"># capture &amp; recognize voice input</span><br>&nbsp;&nbsp;<span class="c-kw">with</span> sr.Microphone() <span class="c-kw">as</span> source:<br>&nbsp;&nbsp;&nbsp;&nbsp;audio = recognizer.listen(source)<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-kw">return</span> recognizer.recognize_google(audio)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-showcase">
+      <div class="wrap">
+        <div class="project-row reverse" data-reveal="focus">
+          <div class="p-copy">
+            <div class="p-top"><span class="p-num">02 / 05</span><span class="badge badge-progress">In Progress</span></div>
+            <!-- PROJECT LOGO PLACEHOLDER -->
+            <div class="p-title">StegaVault</div>
+            <p class="p-desc"><em>[ Add a 1–2 line description of what StegaVault does and the problem it solves. ]</em></p>
+            <div class="tag-row"><span class="tag">Add stack</span></div>
+            <div class="p-actions">
+              <a href="https://github.com/AnsumanDalei" target="_blank" rel="noopener" class="p-link gh" data-magnetic><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.03 11.03 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>GitHub<svg class="ext-arrow" viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
+            </div>
+          </div>
+          <div class="p-mock" data-tilt>
+            <!-- STEGAVAULT PROJECT VISUAL PLACEHOLDER -->
+            <div class="mock-bar"><span class="mock-dot" style="background:#FF5F57;"></span><span class="mock-dot" style="background:#FEBC2E;"></span><span class="mock-dot" style="background:#28C840;"></span><span class="mock-filename">stegavault</span></div>
+            <div class="mock-body"><span class="c-cm">// implementation details coming soon</span><br><span class="c-cm">// add your stack &amp; core logic here</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-showcase">
+      <div class="wrap">
+        <div class="project-row" data-reveal="split">
+          <div class="p-copy">
+            <div class="p-top"><span class="p-num">03 / 05</span><span class="badge badge-progress">In Progress</span></div>
+            <!-- PROJECT LOGO PLACEHOLDER -->
+            <div class="p-title">DocAtDoor</div>
+            <p class="p-desc"><em>[ Add a 1–2 line description of what DocAtDoor does and the problem it solves. ]</em></p>
+            <div class="tag-row"><span class="tag">Add stack</span></div>
+            <div class="p-actions">
+              <a href="https://github.com/AnsumanDalei" target="_blank" rel="noopener" class="p-link gh" data-magnetic><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.03 11.03 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>GitHub<svg class="ext-arrow" viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
+            </div>
+          </div>
+          <div class="p-mock" data-tilt>
+            <div class="mock-bar"><span class="mock-dot" style="background:#FF5F57;"></span><span class="mock-dot" style="background:#FEBC2E;"></span><span class="mock-dot" style="background:#28C840;"></span><span class="mock-filename">docatdoor</span></div>
+            <div class="mock-body"><span class="c-cm">// implementation details coming soon</span><br><span class="c-cm">// add your stack &amp; core logic here</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-showcase">
+      <div class="wrap">
+        <div class="project-row reverse" data-reveal="flip">
+          <div class="p-copy">
+            <div class="p-top"><span class="p-num">04 / 05</span><span class="badge badge-progress">In Progress</span></div>
+            <!-- PROJECT LOGO PLACEHOLDER -->
+            <div class="p-title">CivicFix</div>
+            <p class="p-desc"><em>[ Add a 1–2 line description of what CivicFix does and the problem it solves. ]</em></p>
+            <div class="tag-row"><span class="tag">Add stack</span></div>
+            <div class="p-actions">
+              <a href="https://github.com/AnsumanDalei" target="_blank" rel="noopener" class="p-link gh" data-magnetic><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.03 11.03 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>GitHub<svg class="ext-arrow" viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
+            </div>
+          </div>
+          <div class="p-mock" data-tilt>
+            <div class="mock-bar"><span class="mock-dot" style="background:#FF5F57;"></span><span class="mock-dot" style="background:#FEBC2E;"></span><span class="mock-dot" style="background:#28C840;"></span><span class="mock-filename">civicfix</span></div>
+            <div class="mock-body"><span class="c-cm">// implementation details coming soon</span><br><span class="c-cm">// add your stack &amp; core logic here</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-showcase">
+      <div class="wrap">
+        <div class="project-row" data-reveal="blinds">
+          <div class="p-copy">
+            <div class="p-top"><span class="p-num">05 / 05</span><span class="badge badge-progress">In Progress</span></div>
+            <!-- PROJECT LOGO PLACEHOLDER -->
+            <div class="p-title">TaskHub</div>
+            <p class="p-desc"><em>[ Add a 1–2 line description of what TaskHub does and the problem it solves. ]</em></p>
+            <div class="tag-row"><span class="tag">Add stack</span></div>
+            <div class="p-actions">
+              <a href="https://github.com/AnsumanDalei" target="_blank" rel="noopener" class="p-link gh" data-magnetic><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.03 11.03 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>GitHub<svg class="ext-arrow" viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
+            </div>
+          </div>
+          <div class="p-mock" data-tilt>
+            <div class="mock-bar"><span class="mock-dot" style="background:#FF5F57;"></span><span class="mock-dot" style="background:#FEBC2E;"></span><span class="mock-dot" style="background:#28C840;"></span><span class="mock-filename">taskhub</span></div>
+            <div class="mock-body"><span class="c-cm">// implementation details coming soon</span><br><span class="c-cm">// add your stack &amp; core logic here</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="wrap section-tint tint-lav" id="achievements">
+    <div class="section-label reveal"><span class="index">05</span><span class="label-text">Achievements &amp; Certificates</span></div>
+    <h2 class="section-title reveal">Credentials that back the <em>skillset</em>.</h2>
+    <div class="cert-scatter">
+      <div class="cert-card glass reveal">
+        <!-- CERTIFICATE/ORGANIZATION LOGO PLACEHOLDER -->
+        <div class="cert-icon"><svg class="ic" width="20" height="20" fill="currentColor" aria-hidden="true"><use href="#ic-code"></use></svg></div><div class="cert-title">Python &amp; AI Developer Training</div><div class="cert-issuer">CTTC, Bhubaneswar</div></div>
+      <div class="cert-card glass reveal">
+        <!-- CERTIFICATE/ORGANIZATION LOGO PLACEHOLDER -->
+        <div class="cert-icon"><svg class="ic" width="20" height="20" fill="currentColor" aria-hidden="true"><use href="#ic-brain"></use></svg></div><div class="cert-title">AI Fundamentals</div><div class="cert-issuer">Infosys Springboard</div></div>
+      <div class="cert-card glass reveal">
+        <!-- CERTIFICATE/ORGANIZATION LOGO PLACEHOLDER -->
+        <div class="cert-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4h8v5a4 4 0 0 1-8 0V4z"></path><path d="M8 5H4v1a4 4 0 0 0 4 4"></path><path d="M16 5h4v1a4 4 0 0 1-4 4"></path><path d="M12 13v4"></path><path d="M9 21h6"></path><path d="M9 21c0-2 1.3-3 3-3s3 1 3 3"></path></svg></div><div class="cert-title">Team Lead &amp; Presenter</div><div class="cert-issuer">Smart India Hackathon, 2024</div></div>
+      <div class="cert-card glass reveal">
+        <!-- CERTIFICATE/ORGANIZATION LOGO PLACEHOLDER -->
+        <div class="cert-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div><div class="cert-title">Software Development Intern</div><div class="cert-issuer">ASP OL Media Pvt. Ltd.</div></div>
+      <div class="cert-card glass reveal">
+        <!-- CERTIFICATE/ORGANIZATION LOGO PLACEHOLDER -->
+        <div class="cert-icon"><svg class="ic" width="20" height="20" fill="currentColor" aria-hidden="true"><use href="#ic-server"></use></svg></div><div class="cert-title">Full Stack &amp; DevOps Training</div><div class="cert-issuer">Pyspiders BTM</div></div>
+    </div>
+  </section>
+
+  <section class="wrap section-tint tint-cyan" id="github">
+    <div class="section-label reveal"><span class="index">06</span><span class="label-text">GitHub</span></div>
+    <h2 class="section-title reveal">Live <em>analytics</em>, straight from GitHub.</h2>
+    <div class="github-panel glass reveal">
+      <div class="gh-head">
+        <div class="gh-head-left">
+          <div class="gl-slot gh-gl-slot" data-scene="github"></div>
+          <div>
+            <h3>@AnsumanDalei</h3>
+            <p>Pulled live from the GitHub API every time this page loads.</p>
+          </div>
+        </div>
+        <a href="https://github.com/AnsumanDalei" target="_blank" rel="noopener" class="btn btn-primary" data-magnetic>View Full Profile<svg class="ext-arrow" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
+      </div>
+      <div id="ghContent">
+        <div class="gh-fallback" id="ghLoading">Fetching live GitHub data…</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section-tint tint-blue" id="contact">
+    <div class="section-label reveal"><span class="index">07</span><span class="label-text">Contact</span></div>
+    <h2 class="section-title reveal">Let's build something <em>worth shipping</em>.</h2>
+
+    <div class="contact-toolbar reveal">
+      <button class="btn btn-ghost btn-sm" id="scheduleBtn" data-magnetic type="button"><svg class="ic" width="14" height="14" fill="currentColor" aria-hidden="true"><use href="#ic-calendar-check"></use></svg>Schedule Interview</button>
+      <a href="https://drive.google.com/file/d/1bw3d_a04BXXfcQtEYIibpOPfzBIqBkrv/view?usp=drivesdk" target="_blank" rel="noopener" class="btn btn-outline btn-sm" data-magnetic><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>Download Resume</a>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info-panel glass reveal">
+        <div class="gl-slot contact-gl-slot" data-scene="contact"></div>
+        <div class="ci-title">Get in touch</div>
+        <p class="ci-sub">Recruiter, hiring manager, or just curious about a project — reach out directly, or use the form.</p>
+        <ul class="contact-rows">
+          <li><a class="contact-row" href="mailto:ansumandalei2005@gmail.com" data-magnetic>
+            <!-- EMAIL ICON -->
+            <div class="contact-icon"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+            <div><div class="contact-text-label">Email</div><div class="contact-text-value">ansumandalei2005@gmail.com</div></div>
+          </a></li>
+          <li><a class="contact-row" href="tel:+917735472466" data-magnetic>
+            <!-- PHONE ICON -->
+            <div class="contact-icon"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+            <div><div class="contact-text-label">Phone</div><div class="contact-text-value">+91 77354 72466</div></div>
+          </a></li>
+          <li><a class="contact-row" href="https://www.linkedin.com/in/ansuman-dalei-614b81277" target="_blank" rel="noopener" data-magnetic>
+            <!-- LINKEDIN ICON -->
+            <div class="contact-icon"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></div>
+            <div><div class="contact-text-label">LinkedIn</div><div class="contact-text-value">linkedin.com/in/ansuman-dalei<svg class="ext" viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></div></div>
+          </a></li>
+          <li><a class="contact-row" href="https://github.com/AnsumanDalei" target="_blank" rel="noopener" data-magnetic>
+            <!-- GITHUB ICON -->
+            <div class="contact-icon"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.03 11.03 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg></div>
+            <div><div class="contact-text-label">GitHub</div><div class="contact-text-value">github.com/AnsumanDalei<svg class="ext" viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></div></div>
+          </a></li>
+          <li><a class="contact-row" href="https://drive.google.com/file/d/1bw3d_a04BXXfcQtEYIibpOPfzBIqBkrv/view?usp=drivesdk" target="_blank" rel="noopener" data-magnetic>
+            <div class="contact-icon"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></div>
+            <div><div class="contact-text-label">Resume</div><div class="contact-text-value">Download PDF<svg class="ext" viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></div></div>
+          </a></li>
+          <li><div class="contact-row">
+            <!-- LOCATION ICON -->
+            <div class="contact-icon"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+            <div><div class="contact-text-label">Location</div><div class="contact-text-value">Bhubaneswar, Odisha, India</div></div>
+          </div></li>
+        </ul>
+      </div>
+
+      <div class="contact-right-col">
+      <div class="contact-form-panel glass reveal">
+        <form id="contactForm" novalidate>
+          <div class="form-grid">
+            <div class="field"><label for="cf-name">Full Name *</label><input type="text" id="cf-name" name="from_name" required placeholder="Your full name" /></div>
+            <div class="field"><label for="cf-company">Company Name</label><input type="text" id="cf-company" name="company" placeholder="Where you work" /></div>
+          </div>
+          <div class="form-grid">
+            <div class="field"><label for="cf-email">Work Email *</label><input type="email" id="cf-email" name="reply_to" required placeholder="you@company.com" /></div>
+            <div class="field"><label for="cf-phone">Phone Number</label><input type="tel" id="cf-phone" name="phone" placeholder="+1 234 567 8900" /></div>
+          </div>
+          <div class="form-grid">
+            <div class="field"><label for="cf-subject">Subject *</label><input type="text" id="cf-subject" name="subject" required placeholder="What's this about?" /></div>
+            <div class="field">
+              <label for="cf-reason">Purpose of Contact *</label>
+              <select id="cf-reason" name="reason" required>
+                <option value="" disabled selected>Select a reason</option>
+                <option value="Job Opportunity">Job Opportunity</option>
+                <option value="Internship Opportunity">Internship Opportunity</option>
+                <option value="Schedule an Interview">Schedule an Interview</option>
+                <option value="Freelance / Project Work">Freelance / Project Work</option>
+                <option value="Collaboration">Collaboration</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="field" style="margin-bottom:18px;">
+            <label for="cf-message">Message *</label>
+            <textarea id="cf-message" name="message" required placeholder="Tell me a bit about the role or opportunity…"></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary" id="sendBtn" data-magnetic><svg class="ic" width="14" height="14" fill="currentColor" aria-hidden="true"><use href="#ic-send"></use></svg>Send Message</button>
+          </div>
+          <div class="form-status" id="formStatus"></div>
+          <p class="form-note">Sent directly to my inbox — I typically reply within 1–2 business days.</p>
+        </form>
+      </div>
+
+      <div class="dev-visual-card glass reveal" data-tilt>
+        <div class="dv-glow" aria-hidden="true"></div>
+        <div class="dv-stage">
+          <div class="dv-orbit-glow" aria-hidden="true"></div>
+          <div class="dv-ring-tilt r1"><div class="dv-ring-spin"><span class="dv-particle"></span></div></div>
+          <div class="dv-ring-tilt r2"><div class="dv-ring-spin"><span class="dv-particle"></span></div></div>
+          <div class="dv-ring-tilt r3"><div class="dv-ring-spin"><span class="dv-particle"></span></div></div>
+          <div class="dv-orb"></div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="bottom-wordmark" aria-hidden="true"><span id="wordmarkText">ANSUMAN</span></div>
+
+<footer class="wrap">
+  <div class="foot-brand">
+    <!-- FOOTER PROFILE PHOTO -->
+    <div class="ad-mark avatar-mark" style="border-radius:22%;"><img class="avatar-photo" alt="Ansuman Dalei" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" /></div>
+    <span>Ansuman Dalei — Full-Stack Python &amp; DevOps Engineer</span>
+  </div>
+  <div class="foot-social">
+    <!-- GITHUB ICON -->
+    <a href="https://github.com/AnsumanDalei" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.03 11.03 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg></a>
+    <!-- LINKEDIN ICON -->
+    <a href="https://www.linkedin.com/in/ansuman-dalei-614b81277" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+    <!-- EMAIL ICON -->
+    <a href="mailto:ansumandalei2005@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+  </div>
+  <span>Bhubaneswar, Odisha, India · © 2026</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
