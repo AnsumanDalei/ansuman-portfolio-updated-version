@@ -481,8 +481,7 @@
     var b = baseScene(42);
     var scene = b.scene, camera = b.camera;
     scene.add(accentLight(0x4C7DFF, 2, [2,2,4]));
-    var panel = new THREE.Mesh(new THREE.PlaneGeometry(1.5, 1.0), new THREE.MeshStandardMaterial({color:0xffffff, metalness:0.1, roughness:0.2, emissive:0x2f53e0, emissiveIntensity:0.15, side:THREE.DoubleSide, transparent:true, opacity:0.9}));
-    scene.add(panel);
+
     var glow = new THREE.Mesh(new THREE.PlaneGeometry(1.66, 1.16), new THREE.MeshBasicMaterial({color:0x8C5CFF, transparent:true, opacity:0.16, side:THREE.DoubleSide}));
     glow.position.z = -0.02; scene.add(glow);
     var trail = [];
@@ -507,60 +506,6 @@
     }};
   }
 
-  /* ---------- 6. GITHUB — data-driven analytics spikes ---------- */
-  function buildGithub(){
-    var b = baseScene(38);
-    var scene = b.scene, camera = b.camera;
-    scene.add(accentLight(0x12C7DE, 2.2, [2,2,4]));
-    var group = new THREE.Group(); scene.add(group);
-    var barColors = [0x4C7DFF, 0x8C5CFF, 0x12C7DE, 0xFF9F5A, 0x4C7DFF, 0x8C5CFF];
-    var bars = [];
-    var n = 5;
-    for(var i=0;i<n;i++){
-      var geo = new THREE.BoxGeometry(0.22, 1, 0.22);
-      var mat = new THREE.MeshStandardMaterial({color:barColors[i%barColors.length], emissive:barColors[i%barColors.length], emissiveIntensity:0.3, metalness:0.2, roughness:0.4});
-      var bar = new THREE.Mesh(geo, mat);
-      bar.position.x = (i - (n-1)/2) * 0.32;
-      group.add(bar); bars.push(bar);
-    }
-    return {scene:scene, camera:camera, tick:function(dt, elapsed){
-      var data = (typeof ghBarData !== 'undefined' && ghBarData.length) ? ghBarData : [3,5,2,4,3];
-      var max = Math.max.apply(null, data.concat([1]));
-      bars.forEach(function(bar, i){
-        var v = data[i % data.length] || 1;
-        var target = 0.3 + (v/max) * 1.1;
-        bar.scale.y += (target - bar.scale.y) * 0.06;
-        bar.position.y = (bar.scale.y * 1) / 2 - 0.5;
-      });
-      group.rotation.y = Math.sin(elapsed*0.25) * 0.5;
-      camera.lookAt(0,0,0);
-    }};
-  }
-
-  /* ---------- 7. CONTACT — signal orb with trailing particles ---------- */
-  function buildContact(){
-    var b = baseScene(38);
-    var scene = b.scene, camera = b.camera;
-    scene.add(accentLight(0x8C5CFF, 2.2, [2,2,4]));
-    var orb = new THREE.Mesh(new THREE.IcosahedronGeometry(0.42, 2), new THREE.MeshStandardMaterial({color:0x8C5CFF, emissive:0x4a2ea8, emissiveIntensity:0.5, metalness:0.3, roughness:0.2, transparent:true, opacity:0.9}));
-    scene.add(orb);
-    var particles = [];
-    var pGeo = new THREE.SphereGeometry(0.028, 8, 8);
-    for(var i=0;i<14;i++){
-      var p = new THREE.Mesh(pGeo, new THREE.MeshBasicMaterial({color:0x12C7DE, transparent:true, opacity:0.7}));
-      p.userData = {angle: (i/14)*Math.PI*2, radius: 0.75 + (i%3)*0.12, speed: 0.5 + (i%4)*0.15};
-      scene.add(p); particles.push(p);
-    }
-    return {scene:scene, camera:camera, tick:function(dt, elapsed){
-      orb.rotation.y += dt * 0.4;
-      orb.position.y = Math.sin(elapsed*0.8) * 0.1;
-      particles.forEach(function(p){
-        var a = elapsed * p.userData.speed + p.userData.angle;
-        p.position.set(Math.cos(a)*p.userData.radius, Math.sin(a*1.3)*0.3, Math.sin(a)*p.userData.radius);
-      });
-      camera.lookAt(0,0,0);
-    }};
-  }
 
   /* ---------- register + render ---------- */
   function registerScene(key, builder){
@@ -572,8 +517,7 @@
 
   if(renderer3D){
     registerScene('projects', buildProjects);
-    registerScene('github', buildGithub);
-    registerScene('contact', buildContact);
+    
 
     function resizeGL(){
       renderer3D.setSize(window.innerWidth, window.innerHeight);
