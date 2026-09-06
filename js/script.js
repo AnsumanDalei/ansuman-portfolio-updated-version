@@ -492,10 +492,6 @@
       scene.add(t); trail.push(t);
     }
     return {scene:scene, camera:camera, tick:function(dt, elapsed){
-      panel.rotation.y = Math.sin(elapsed*0.4) * 0.35;
-      panel.rotation.x = Math.cos(elapsed*0.3) * 0.12;
-      panel.position.y = Math.sin(elapsed*0.6) * 0.08;
-      glow.rotation.copy(panel.rotation); glow.position.y = panel.position.y;
       trail.forEach(function(t){
         t.userData.y += dt * t.userData.speed;
         if(t.userData.y > 1.2){ t.userData.y = -1.2; t.userData.x = (Math.random()-0.5)*0.9; }
